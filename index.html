@@ -1,20 +1,125 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Old Prodigy</title>
-	<meta name="description" content="Old Prodigy brought back"/>
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
-	<link rel="stylesheet" type="text/css" href="./style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Prodigy</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+        }
 
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1rem;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2rem;
+            letter-spacing: -0.025em;
+            margin-bottom: 3rem;
+            color: var(--text-main);
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            background: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: #1e293b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -10px rgba(56, 189, 248, 0.4);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .section-label {
+            grid-column: 1 / -1;
+            font-size: 0.75rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+        }
+    </style>
+</head>
 <body>
-	<div class="title" align="center">
-	- Old Prodigy -
-	</div>
-	<div align="center" style="position: relative; top: 30px">
-		<a href="/oldprodigy">	
-			<button id="oldprodigy" class="button">
-			Old Prodigy
-			</button>
-		</a>
-	</div>
+
+    <h1>Old Prodigy</h1>
+
+    <div class="container">
+        <div class="grid">
+            <a href="/version/1-10-0/" class="btn">1-10-0</a>
+            <a href="/version/1-11-0/" class="btn">1-11-0</a>
+            <a href="/version/1-16-5/" class="btn">1-16-5</a>
+            <a href="/version/1-17-0/" class="btn">1-17-0</a>
+            <a href="/version/1-18-2/" class="btn">1-18-2</a>
+            <a href="/version/1-22-1/" class="btn">1-22-1</a>
+            <a href="/version/1-24-0/" class="btn">1-24-0</a>
+            <a href="/version/1-30-0/" class="btn">1-30-0</a>
+            <a href="/version/1-35-2/" class="btn">1-35-2</a>
+            <a href="/version/1-37-0/" class="btn">1-37-0</a>
+            <a href="/version/1-39-0/" class="btn">1-39-0</a>
+            <a href="/version/1-46-2/" class="btn">1-46-2</a>
+            <a href="/version/1-50-0/" class="btn">1-50-0</a>
+            <a href="/version/1-51-0/" class="btn">1-51-0</a>
+            <a href="/version/1-60-0/" class="btn">1-60-0</a>
+            <a href="/version/1-70-0/" class="btn">1-70-0</a>
+            <a href="/version/1-80-0/" class="btn">1-80-0</a>
+            <a href="/version/1-90-0/" class="btn">1-90-0</a>
+
+            <a href="/version/2-20-0/" class="btn">2-20-0</a>
+            <a href="/version/2-30-0/" class="btn">2-30-0</a>
+            <a href="/version/2-45-0/" class="btn">2-45-0</a>
+            <a href="/version/2-6-0/" class="btn">2-6-0</a>
+
+            <a href="/version/3-15-3/" class="btn">3-15-3</a>
+        </div>
+    </div>
+
+</body>
 </html>
